@@ -1,9 +1,3 @@
-Select *
-from [Covid Portfolio Project]..CovidDeaths$
-where continent is null
-order by 3,4
-
-
 --Total death VS Total Cases (Likehood of dying if someone has the COVID in their country)
 
 select location, date, total_cases, total_deaths, (total_deaths/total_cases)*100 as DeathPercentage
